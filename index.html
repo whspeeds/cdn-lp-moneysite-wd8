@@ -25,7 +25,7 @@
 <meta property="og:image:alt" content="WD808">
     <meta name="viewport" content="width=1280">
 
-<meta property="og:url" content="https://wd808.xyz/">
+<meta property="og:url" content="/">
 <link rel="canonical" href="index.html">
 
 
@@ -2946,7 +2946,7 @@ $('#iframeaudotdepoqris').show();
        
        
       <!--app_sub_skin != \Constants::onix  -->
-      <form name="loginForm" id="loginForm" class="form-horizontal needs-validation" action="https://wd808.xyz/login" method="POST" [ngclass]="{'was-validated':isSubmit,'':!isSubmit }">
+      <form name="loginForm" id="loginForm" class="form-horizontal needs-validation" action="/login" method="POST" [ngclass]="{'was-validated':isSubmit,'':!isSubmit }">
        <input type="hidden" name="_token" value="GZOdEIsZ0IomTs1ESi63j2gEKisRotS99iUoUyDB">        
         
          
@@ -3269,7 +3269,7 @@ $('#iframeaudotdepoqris').show();
                 <input type="tel" id='registerCaptchaimg' class="form-control" name="forgotPwCaptchaimg" maxlength="4" autocomplete="off" style="height: 50px;" placeholder="Captcha">
             </div>
             <button class="btn btn-refresh col-xs-4 col-md-4 text-left" type="button" id="fogotrefreshCaptcha">
-            <img data-url="https://wd808.xyz/captcha-image-forgotpw?v=1718525852" id="forgotPwCaptchaimgpath" class="captcha_img" autocomplete="off">
+            <img data-url="/captcha-image-forgotpw?v=1718525852" id="forgotPwCaptchaimgpath" class="captcha_img" autocomplete="off">
             <i class="icon-refresh"></i>
             </button>
         </div>
@@ -3286,7 +3286,7 @@ $('#iframeaudotdepoqris').show();
       </form>
 
 
-        <form class="form-horizontal text-center" id="pinForm" action="https://wd808.xyz/validate-pin">
+        <form class="form-horizontal text-center" id="pinForm" action="/validate-pin">
 
                     <div class="form-group ">
                         <h3>Kode Pin Aman</h3>
@@ -3365,7 +3365,7 @@ $('#iframeaudotdepoqris').show();
                      </div>
                 </form>
 
-                <form class="form-horizontal text-center" id="fa2Form" action="https://wd808.xyz/validate-2fa" style="display: none;">
+                <form class="form-horizontal text-center" id="fa2Form" action="/validate-2fa" style="display: none;">
 
                     <div class="form-group ">
                         <h3>Masukkan Kode 2FA</h3>
@@ -3634,7 +3634,7 @@ $('#iframeaudotdepoqris').show();
                 window.prize = 0 ;
                 window.ajax_jackpot= function  () {
                     $.ajax({
-                        url: "https://wd808.xyz/getPokerJackpotAmt",
+                        url: "/getPokerJackpotAmt",
                         type: 'post',
                         data: { _token : $('meta[name=csrf-token]').attr('content') },
                         success: function (data) {
